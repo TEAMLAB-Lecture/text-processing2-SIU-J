@@ -29,10 +29,13 @@ def digits_to_words(input_string):
             'three one four one five'
     """
     stringed_number_list = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+    digit_list = []
     digit_string = ''
     for item in input_string:
         if item.isdigit():
-            digit_string += stringed_number_list[int(item)]
+            digit_list.append(stringed_number_list[int(item)])
+    
+    digit_string = ' '.join(digit_list)
     return digit_string
 
 
