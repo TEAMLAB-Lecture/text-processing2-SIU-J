@@ -31,7 +31,7 @@ def digits_to_words(input_string):
     stringed_number_list = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
     digit_string = ''
     for item in input_string:
-        if isdigit(item):
+        if item.isdigit():
             digit_string += stringed_number_list[int(item)]
     return digit_string
 
