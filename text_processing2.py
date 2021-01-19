@@ -74,7 +74,7 @@ def to_camel_case(underscore_str):
         if item == '':
             continue
 
-        if camelcase_str == None:
+        if len(camelcase_str) == 0:
             camelcase_str += item.lower()
         else:
             camelcase_str += item[0].upper()
