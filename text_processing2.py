@@ -33,6 +33,8 @@ def digits_to_words(input_string):
     for item in input_string:
         if isdigit(item):
             digit_string += stringed_number_list[int(item)]
+    if type(digit_string) == 'NonType':
+        digit_string = ''
     return digit_string
 
 
